@@ -138,7 +138,7 @@ export default function Nav() {
             })}>
             {isOpen ? <IconClose /> : <IconHamburger />}
           </button>
-          <img src='/lumine.png' className="rounded-full w-10 h-10 mr-2" />
+          <img src='/lumine-trans.png' className="w-12 h-12 mr-2" />
           <Link href="/" className='inline-flex text-l font-normal items-center text-primary dark:text-primary-dark py-1 mr-0 sm:mr-3 whitespace-nowrap'>
               Lumine UI
           </Link>

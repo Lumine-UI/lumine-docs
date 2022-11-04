@@ -70,7 +70,7 @@ export default function RootLayout({ children }) {
           <div className="fixed lg:sticky top-0 left-0 right-0 py-0 shadow lg:shadow-none z-50">
             <Nav />
           </div>
-          <main className="min-w-0 p-10">
+          <main className="min-w-0 p-4">
             <div className="lg:hidden h-16 mb-2" />
             <article className="break-words">
               {children}
