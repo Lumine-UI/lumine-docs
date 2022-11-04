@@ -144,7 +144,7 @@ export default function Nav() {
           </Link>
           <div className="lg:w-full leading-loose hidden sm:flex flex-initial items-center h-auto pr-5 lg:pr-5 pt-0.5">
             <div className="px-1 mb-px bg-highlight dark:bg-highlight-dark rounded text-link dark:text-link-dark uppercase font-bold tracking-wide text-xs whitespace-nowrap">
-              Beta
+              Alpha
             </div>
           </div>
           <div className="block dark:hidden">
