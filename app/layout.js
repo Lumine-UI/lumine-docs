@@ -1,9 +1,21 @@
-// This file will contain the layout of the app. Left nav and empty space on right
-
+"use client";
+import { usePathname } from "next/navigation";
 import "../styles/globals.css";
-import FakeNav from "./FakeNav";
+import Nav from "./Nav";
+import sidebarHome from "../utils/sidebarHome.json";
+import sidebarLearn from "../utils/sidebarLearn.json";
+import { useActiveSection } from "../hooks/useActiveSection";
+import { SidebarContext } from "./SidebarContext";
 
 export default function RootLayout({ children }) {
+  const asPath = usePathname();
+  const section = useActiveSection();
+  let routeTree = sidebarHome;
+  switch (section) {
+    case 'docs':
+      routeTree = sidebarLearn;
+      break;
+  }
   return (
     <html>
       <head></head>
@@ -51,17 +63,12 @@ export default function RootLayout({ children }) {
               `,
           }}
         />
+        <SidebarContext.Provider value={routeTree}>
         <div className="grid grid-cols-only-content lg:grid-cols-sidebar-content 2xl:grid-cols-sidebar-content-toc">
           <div className="fixed lg:sticky top-0 left-0 right-0 py-0 shadow lg:shadow-none z-50">
-            <div className="flex flex-col p-10">
-              <div className="flex flex-row">
-                <div>Introduction</div>
-                <div className="w-12"></div>
-                <div>Docs</div>
-              </div>
-            </div >
+            <Nav />
           </div>
-          <main className="min-w-0">
+          <main className="min-w-0 p-10">
             <div className="lg:hidden h-16 mb-2" />
             <article className="break-words">
               {children}
@@ -70,6 +77,7 @@ export default function RootLayout({ children }) {
             <footer>Footer</footer>
           </main>
         </div>
+        </SidebarContext.Provider>
       </body>
     </html>
   )

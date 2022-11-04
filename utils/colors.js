@@ -4,19 +4,35 @@ module.exports = {
   'primary-dark': '#F6F7F9', // gray-5
   secondary: '#404756', // gray-70
   'secondary-dark': '#EBECF0', // gray-10
-  link: '#087EA4', // blue-50
-  'link-dark': '#149ECA', // blue-40
+  // link: '#087EA4', // blue-50
+  link: '#d946ef', // fuschia-500
+  // 'link-dark': '#149ECA', // blue-40
+  'link-dark': '#e879f9', // fuschia-400
   syntax: '#EBECF0', // gray-10
   wash: '#FFFFFF',
   'wash-dark': '#23272F', // gray-90
   card: '#F6F7F9', // gray-05
   'card-dark': '#343A46', // gray-80
-  highlight: '#E6F7FF', // blue-10
-  'highlight-dark': 'rgba(88,175,223,.1)',
+  // highlight: '#E6F7FF', // blue-10
+  highlight: '#fae8ff', // fuschia-100
+  // 'highlight-dark': 'rgba(88,175,223,.1)',
+  'highlight-dark': 'rgba(216,70,239,.1)', // fuschia-500
   border: '#EBECF0', // gray-10
   'border-dark': '#343A46', // gray-80
   'secondary-button': '#EBECF0', // gray-10
   'secondary-button-dark': '#404756', // gray-70
+
+  // Fuschia
+  'fuschia-50': '#fdf4ff',
+  'fuschia-100': '#fae8ff',
+  'fuschia-200': '#f5d0fe',
+  'fuschia-300': '#f0abfc',
+  'fuschia-400': '#e879f9',
+  'fuschia-500': '#d946ef',
+  'fuschia-600': '#c026d3',
+  'fuschia-700': '#a21caf',
+  'fuschia-800': '#86198f',
+  'fuschia-900': '#701a75',
 
   // Gray
   'gray-95': '#16181D',

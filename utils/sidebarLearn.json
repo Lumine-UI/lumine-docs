@@ -1,0 +1,38 @@
+{
+  "title": "Docs",
+  "heading": true,
+  "path": "/docs",
+  "routes": [
+    {
+      "heading": true,
+      "path": "",
+      "routes": [
+        {
+          "title": "Getting Started",
+          "path": "/docs",
+          "routes": [
+            {
+              "title": "Create a new Lumine Project",
+              "path": "/docs/create-a-new-lumine-project"
+            },
+            {
+              "title": "Running Lumine Project",
+              "path": "/docs/running-lumine-project"
+            }
+          ]
+        },
+        {
+          "title": "Components",
+          "tags": [],
+          "path": "/docs/components",
+          "routes": [
+            {
+              "title": "Text",
+              "path": "/docs/components/text"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
