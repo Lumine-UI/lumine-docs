@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useContext, useEffect, Suspense } from 'react';
 import * as React from 'react';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import cn from "classnames";
 import { IconHamburger } from "../icons/IconHamburger";
@@ -139,11 +139,11 @@ export default function Nav() {
             {isOpen ? <IconClose /> : <IconHamburger />}
           </button>
           <img src='/lumine.png' className="rounded-full w-10 h-10 mr-2" />
-          <NextLink legacyBehavior href="/">
-            <a className="inline-flex text-l font-normal items-center text-primary dark:text-primary-dark py-1 mr-0 sm:mr-3 whitespace-nowrap">
+          <Link href="/" className='inline-flex text-l font-normal items-center text-primary dark:text-primary-dark py-1 mr-0 sm:mr-3 whitespace-nowrap'>
+            {/* <a className="inline-flex text-l font-normal items-center text-primary dark:text-primary-dark py-1 mr-0 sm:mr-3 whitespace-nowrap"> */}
               Lumine UI
-            </a>
-          </NextLink>
+            {/* </a> */}
+          </Link>
           <div className="lg:w-full leading-loose hidden sm:flex flex-initial items-center h-auto pr-5 lg:pr-5 pt-0.5">
             <div className="px-1 mb-px bg-highlight dark:bg-highlight-dark rounded text-link dark:text-link-dark uppercase font-bold tracking-wide text-xs whitespace-nowrap">
               Beta

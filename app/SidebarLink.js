@@ -33,8 +33,8 @@ export function SidebarLink({
     target = '_blank';
   }
   return (
-    <Link legacyBehavior href={href}>
-      <a
+    <Link 
+        href={href}
         ref={ref}
         title={title}
         target={target}
@@ -73,7 +73,6 @@ export function SidebarLink({
             <IconNavArrow displayDirection={isExpanded ? 'down' : 'right'} />
           </span>
         )}
-      </a>
     </Link>
   );
 }

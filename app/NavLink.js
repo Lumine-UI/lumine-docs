@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cn from 'classnames';
 import {ExternalLink} from './ExternalLink';
-import NextLink from 'next/link';
+import Link from 'next/link';
 
 export default function NavLink({href, children, isActive}) {
   const classes = cn(
@@ -22,9 +22,11 @@ export default function NavLink({href, children, isActive}) {
   }
 
   return (
-    <NextLink legacyBehavior href={href}>
-      <a className={classes}>{children}</a>
-    </NextLink>
+    <Link className={classes} href={href}>
+      {/* <a className={classes}> */}
+        {children}
+      {/* </a> */}
+    </Link>
   );
 }
 
