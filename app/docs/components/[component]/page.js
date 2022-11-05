@@ -1,4 +1,4 @@
-import Markdown from "markdown-to-jsx";
+import DocMarkdown from "./Markdown";
 
 async function readF(component) {
     const content = await import(`../../../../content/docs/components/${component}.md`);
@@ -10,9 +10,6 @@ export default async function Component(props) {
     const fileStr = await readF(component);
 
     return (
-        <Markdown>
-            {fileStr}
-            {/* {`# ${component} Component`} */}
-        </Markdown>
-    )
+        <DocMarkdown fileStr={fileStr} />
+    );
 }
