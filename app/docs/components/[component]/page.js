@@ -1,12 +1,14 @@
 import Markdown from "markdown-to-jsx";
 import fs from "fs";
 
-const prefixPath = "./content/docs/components/";
+function getFileString(component) {
+    const prefixPath = "./content/docs/components/";
+    return fs.readFileSync(`${prefixPath}${component}.md`, "utf8");
+}
 
 export default function Component(props) {
     const component = props.params.component;
-
-    const file = fs.readFileSync(`${prefixPath}${component}.md`, "utf8");
+    const file = getFileString(component);
 
     return (
         <Markdown>
