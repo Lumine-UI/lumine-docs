@@ -28,7 +28,7 @@
           "routes": [
             {
               "title": "Text",
-              "path": "/docs/components/text"
+              "path": "/docs/components/Text"
             }
           ]
         }
