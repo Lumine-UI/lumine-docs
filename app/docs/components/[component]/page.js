@@ -1,19 +1,20 @@
 import Markdown from "markdown-to-jsx";
 import fs from "fs";
 
-function getFileString(component) {
+async function getFileString(component) {
     const prefixPath = "./content/docs/components/";
-    return fs.readFileSync(`${prefixPath}${component}.md`, "utf8");
+    const fileStr = await fs.promises.readFile(`${prefixPath}${component}.md`, "utf8");
+    return fileStr;
 }
 
-export default function Component(props) {
+export default async function Component(props) {
     const component = props.params.component;
-    // const file = getFileString(component);
+    const fileStr = await getFileString(component);
 
     return (
         <Markdown>
-            {/* {file} */}
-            {`# ${component} Component`}
+            {fileStr}
+            {/* {`# ${component} Component`} */}
         </Markdown>
     )
 }
