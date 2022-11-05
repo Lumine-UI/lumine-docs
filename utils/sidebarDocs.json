@@ -29,6 +29,10 @@
             {
               "title": "Text",
               "path": "/docs/components/Text"
+            },
+            {
+              "title": "Button",
+              "path": "/docs/components/Button"
             }
           ]
         }
