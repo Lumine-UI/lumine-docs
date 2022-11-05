@@ -8,11 +8,12 @@ function getFileString(component) {
 
 export default function Component(props) {
     const component = props.params.component;
-    const file = getFileString(component);
+    // const file = getFileString(component);
 
     return (
         <Markdown>
-            {file}
+            {/* {file} */}
+            {`# ${component} Component`}
         </Markdown>
     )
 }
