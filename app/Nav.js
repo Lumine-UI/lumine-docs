@@ -11,7 +11,7 @@ import { useActiveSection } from '../hooks/useActiveSection';
 import { usePathname } from 'next/navigation';
 import { SidebarContext } from './SidebarContext';
 import sidebarHome from "../utils/sidebarHome.json";
-import sidebarLearn from "../utils/sidebarLearn.json";
+import sidebarDocs from "../utils/sidebarDocs.json";
 import { SidebarRouteTree } from './SidebarRouteTree';
 
 const darkIcon = (
@@ -75,7 +75,7 @@ export default function Nav() {
         routeTree = sidebarHome;
         break;
       case 'docs':
-        routeTree = sidebarLearn;
+        routeTree = sidebarDocs;
         break;
     }
   }

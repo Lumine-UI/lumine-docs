@@ -1,19 +1,17 @@
 "use client";
-import { usePathname } from "next/navigation";
 import "../styles/globals.css";
 import Nav from "./Nav";
 import sidebarHome from "../utils/sidebarHome.json";
-import sidebarLearn from "../utils/sidebarLearn.json";
+import sidebarDocs from "../utils/sidebarDocs.json";
 import { useActiveSection } from "../hooks/useActiveSection";
 import { SidebarContext } from "./SidebarContext";
 
 export default function RootLayout({ children }) {
-  const asPath = usePathname();
   const section = useActiveSection();
   let routeTree = sidebarHome;
   switch (section) {
     case 'docs':
-      routeTree = sidebarLearn;
+      routeTree = sidebarDocs;
       break;
   }
   return (
@@ -66,19 +64,19 @@ export default function RootLayout({ children }) {
           }}
         />
         <SidebarContext.Provider value={routeTree}>
-        <div className="grid grid-cols-only-content lg:grid-cols-sidebar-content 2xl:grid-cols-sidebar-content-toc">
-          <div className="fixed lg:sticky top-0 left-0 right-0 py-0 shadow lg:shadow-none z-50">
-            <Nav />
+          <div className="grid grid-cols-only-content lg:grid-cols-sidebar-content 2xl:grid-cols-sidebar-content-toc">
+            <div className="fixed lg:sticky top-0 left-0 right-0 py-0 shadow lg:shadow-none z-50">
+              <Nav />
+            </div>
+            <main className="min-w-0 p-4">
+              <div className="lg:hidden h-16 mb-2" />
+              <article className="break-words">
+                {children}
+              </article>
+              <div className="h-16" />
+              <footer>Footer</footer>
+            </main>
           </div>
-          <main className="min-w-0 p-4">
-            <div className="lg:hidden h-16 mb-2" />
-            <article className="break-words">
-              {children}
-            </article>
-            <div className="h-16" />
-            <footer>Footer</footer>
-          </main>
-        </div>
         </SidebarContext.Provider>
       </body>
     </html>
