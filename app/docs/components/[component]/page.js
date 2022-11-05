@@ -1,9 +1,11 @@
 import Markdown from "markdown-to-jsx";
-import fs from "fs";
 
 async function getFileString(component) {
-    const prefixPath = "./content/docs/components/";
-    const fileStr = await fs.promises.readFile(`${prefixPath}${component}.md`, "utf8");
+    const fs = require('fs')
+    const path = require('path');
+    const prefixPath = "../../../../../../content/docs/components/";
+    const fileStr = await fs.promises.readFile(path.resolve(__dirname, `${prefixPath}${component}.md`), 'utf8');
+    // const fileStr = await fs.promises.readFile(`${prefixPath}${component}.md`, "utf8");
     return fileStr;
 }
 
