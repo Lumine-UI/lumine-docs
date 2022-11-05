@@ -1,11 +1,5 @@
 import Markdown from "markdown-to-jsx";
 
-async function readDir(path) {
-    const fs = require('fs');
-  const files= await fs.promises.readdir(path);
-  console.log(files); // array of file names
-}
-
 async function getFileString(component) {
     const fs = require('fs')
     const path = require('path');
@@ -15,14 +9,20 @@ async function getFileString(component) {
     return fileStr;
 }
 
+async function readF(component) {
+    const content = await import("../../../../content/docs/components/" + component + ".md");
+    return content.default;
+}
+
 export default async function Component(props) {
     const component = props.params.component;
     // const fileStr = await getFileString(component);
-    await readDir("./");
+    const fileStr = await readF(component);
+
     return (
         <Markdown>
-            {/* {fileStr} */}
-            {`# ${component} Component`}
+            {fileStr}
+            {/* {`# ${component} Component`} */}
         </Markdown>
     )
 }
