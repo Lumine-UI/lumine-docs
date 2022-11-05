@@ -2,6 +2,6 @@
 
 ## Usage
 
-```jsx
+```json
 import { Button } from 'react-native-elements';
 ```

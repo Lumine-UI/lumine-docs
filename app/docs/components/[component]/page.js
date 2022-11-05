@@ -10,6 +10,6 @@ export default async function Component(props) {
     const fileStr = await readF(component);
 
     return (
-        <DocMarkdown fileStr={fileStr} />
+        <DocMarkdown fileStr={fileStr} component={component}/>
     );
 }

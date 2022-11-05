@@ -70,11 +70,11 @@ export default function RootLayout({ children }) {
             </div>
             <main className="min-w-0 p-4">
               <div className="lg:hidden h-16 mb-2" />
-              <article className="break-words min-h-full">
+              <article className="break-words">
                 {children}
               </article>
               <div className="h-16" />
-              <footer>Footer</footer>
+              <footer></footer>
             </main>
           </div>
         </SidebarContext.Provider>
