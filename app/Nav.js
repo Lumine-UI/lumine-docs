@@ -13,7 +13,6 @@ import { SidebarContext } from './SidebarContext';
 import sidebarHome from "../utils/sidebarHome.json";
 import sidebarDocs from "../utils/sidebarDocs.json";
 import { SidebarRouteTree } from './SidebarRouteTree';
-import { useRouter } from 'next/navigation';
 
 const darkIcon = (
   <svg
@@ -61,7 +60,6 @@ export default function Nav() {
   const section = useActiveSection();
   const scrollParentRef = useRef(null);
   const asPath = usePathname();
-  const router = useRouter();
 
   let routeTree = useContext(SidebarContext);
 
@@ -155,7 +153,6 @@ export default function Nav() {
               aria-label="Use Dark Mode"
               onClick={() => {
                 window.__setPreferredTheme('dark');
-                router.refresh();
               }}
               className="hidden lg:flex items-center h-full pr-2">
               {darkIcon}
@@ -167,7 +164,6 @@ export default function Nav() {
               aria-label="Use Light Mode"
               onClick={() => {
                 window.__setPreferredTheme('light');
-                router.refresh();
               }}
               className="hidden lg:flex items-center h-full pr-2">
               {lightIcon}
@@ -189,7 +185,6 @@ export default function Nav() {
               aria-label="Use Dark Mode"
               onClick={() => {
                 window.__setPreferredTheme('dark');
-                router.refresh();
               }}
               className="flex lg:hidden items-center p-1 h-full ml-4 lg:ml-6">
               {darkIcon}
@@ -201,7 +196,6 @@ export default function Nav() {
               aria-label="Use Light Mode"
               onClick={() => {
                 window.__setPreferredTheme('light');
-                router.refresh();
               }}
               className="flex lg:hidden items-center p-1 h-full ml-4 lg:ml-6">
               {lightIcon}

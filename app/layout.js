@@ -18,6 +18,8 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <head>
+          <title>Lumine UI</title>
+          <link rel="icon" type="image/png" href="/lumine-trans.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </head>
       <body className="font-sans antialiased text-lg bg-wash dark:bg-wash-dark text-secondary dark:text-secondary-dark leading-base">
