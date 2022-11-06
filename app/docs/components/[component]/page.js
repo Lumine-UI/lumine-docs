@@ -1,4 +1,4 @@
-import DocMarkdown from "./Markdown";
+import DocMarkdown from "../../../Markdown";
 
 async function readF(component) {
     const content = await import(`../../../../content/docs/components/${component}.md`);

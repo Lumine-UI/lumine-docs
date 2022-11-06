@@ -5,6 +5,7 @@ import sidebarHome from "../utils/sidebarHome.json";
 import sidebarDocs from "../utils/sidebarDocs.json";
 import { useActiveSection } from "../hooks/useActiveSection";
 import { SidebarContext } from "./SidebarContext";
+import Footer from "./Footer";
 
 export default function RootLayout({ children }) {
   const section = useActiveSection();
@@ -68,13 +69,13 @@ export default function RootLayout({ children }) {
             <div className="fixed lg:sticky top-0 left-0 right-0 py-0 shadow lg:shadow-none z-50">
               <Nav />
             </div>
-            <main className="min-w-0 p-4">
+            <main className="min-w-0 p-4 md:p-6 h-full">
               <div className="lg:hidden h-16 mb-2" />
               <article className="break-words">
                 {children}
               </article>
               <div className="h-16" />
-              <footer></footer>
+              <Footer />
             </main>
           </div>
         </SidebarContext.Provider>

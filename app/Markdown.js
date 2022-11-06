@@ -3,8 +3,8 @@ import Markdown from "markdown-to-jsx";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { createContext, useContext } from "react";
 import { dracula, github } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { IconDownload } from "../../../../icons/IconDownload";
-import { IconCopy } from "../../../../icons/IconCopy";
+import { IconDownload } from "../icons/IconDownload";
+import { IconCopy } from "../icons/IconCopy";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 

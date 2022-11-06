@@ -1,7 +1,14 @@
-export default function HomePage() {
+import DocMarkdown from "./Markdown";
+
+async function readF() {
+    const content = await import(`../content/Overview.md`);
+    return content.default;
+}
+
+export default async function HomePage(props) {
+    const fileStr = await readF();
+
     return (
-        <div>
-            <h1>Home Page</h1>
-        </div>
-    )
+        <DocMarkdown fileStr={fileStr} component={'Overview'}/>
+    );
 }
