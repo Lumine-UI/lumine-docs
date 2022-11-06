@@ -50,16 +50,19 @@ const Code = ({ className, children }) => {
     // TODO: remove this hacky way of setting the theme
     let theme = 'dark';
     if (typeof window !== 'undefined') {
-        theme = localStorage.getItem('theme');
+        if(localStorage.getItem('theme')) {
+            theme = localStorage.getItem('theme');
+        } else if(window.__theme) {
+            theme = window.__theme;
+        }
     }
-
     const componentName = useContext(ComponentContext);
-
     const language = className.replace("lang-", "");
     return (
         <div className="relative">
             <SyntaxHighlighter language={language} style={theme === 'dark' ? dracula : github} customStyle={{
                 borderRadius: "0.6rem",
+                padding: "2rem 1.5rem",
             }}>
                 {children}
             </SyntaxHighlighter>
@@ -73,21 +76,21 @@ const ComponentContext = createContext("Text");
 export default function DocMarkdown({ fileStr, component }) {
     return (
         <ComponentContext.Provider value={component}>
-            <Markdown
-                options={{
-                    overrides: {
-                        h1: H1,
-                        h2: H2,
-                        h3: H3,
-                        h4: H4,
-                        code: {
-                            component: Code
+                <Markdown
+                    options={{
+                        overrides: {
+                            h1: H1,
+                            h2: H2,
+                            h3: H3,
+                            h4: H4,
+                            code: {
+                                component: Code
+                            }
                         }
-                    }
-                }}
-            >
-                {fileStr}
-            </Markdown>
+                    }}
+                >
+                    {fileStr}
+                </Markdown>
             <ToastContainer />
         </ComponentContext.Provider>
     );

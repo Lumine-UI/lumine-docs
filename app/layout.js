@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
             </div>
             <main className="min-w-0 p-4 md:p-6 h-full">
               <div className="lg:hidden h-16 mb-2" />
-              <article className="break-words">
+              <article className="break-words min-h-screen">
                 {children}
               </article>
               <div className="h-16" />
