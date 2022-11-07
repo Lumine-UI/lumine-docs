@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
             <div className="fixed lg:sticky top-0 left-0 right-0 py-0 shadow lg:shadow-none z-50">
               <Nav />
             </div>
-            <main className="min-w-0 p-4 md:p-6 h-full">
+            <main className="min-w-0 p-4 md:p-6 2xl:flex items-center justify-center flex-col">
               <div className="lg:hidden h-16 mb-2" />
               <article className="break-words min-h-screen">
                 {children}

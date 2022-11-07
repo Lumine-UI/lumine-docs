@@ -26,7 +26,7 @@ const Code = ({ className, children }) => {
     const language = className?.replace("lang-", "");
 
     if (!language) {
-        return <code className="prose-code:before:hidden prose-code:after:hidden after">{children}</code>
+        return <code>{children}</code>
     }
 
     const componentName = useContext(ComponentContext);
@@ -82,14 +82,20 @@ const markdownOverrides = {
             className: "text-link border-link dark:text-link-dark dark:border-link-dark font-bold"
         }
     },
-    code: Code
+    code: Code,
+    li: {
+        component: "li",
+        props: {
+            className: "text-primary dark:text-primary-dark"
+        }
+    }
 }
 
 export default function DocMarkdown({ fileStr, component }) {
     return (
         <ComponentContext.Provider value={component}>
             <Markdown
-                className="prose dark:prose-invert prose-code:before:hidden prose-code:after:hidden"
+                className="prose dark:prose-invert prose-code:before:hidden prose-code:after:hidden prose-code:text-base"
                 options={{
                     overrides: markdownOverrides
                 }}

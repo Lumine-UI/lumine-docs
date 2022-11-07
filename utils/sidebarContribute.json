@@ -1,0 +1,31 @@
+{
+  "title": "Contribute",
+  "heading": true,
+  "path": "/contribute",
+  "routes": [
+    {
+      "heading": true,
+      "path": "",
+      "routes": [
+        {
+          "title": "Getting Started",
+          "path": "/contribute",
+          "routes": [
+            {
+              "title": "Setup and configure Lumine on your machine",
+              "path": "/contribute/setup"
+            },
+            {
+              "title": "Contribution Guidelines",
+              "path": "/contribute/guidelines"
+            },
+            {
+              "title": "Code of Conduct",
+              "path": "/contribute/code-of-conduct"
+            }
+          ]
+        },
+      ]
+    }
+  ]
+}

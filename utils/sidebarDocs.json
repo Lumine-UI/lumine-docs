@@ -27,12 +27,76 @@
           "path": "/docs/components",
           "routes": [
             {
+              "title": "View",
+              "path": "/docs/components/View"
+            },
+            {
               "title": "Text",
               "path": "/docs/components/Text"
             },
             {
               "title": "Button",
               "path": "/docs/components/Button"
+            },
+            {
+              "title": "Image",
+              "path": "/docs/components/Image"
+            },
+            {
+              "title": "Icon",
+              "path": "/docs/components/Icon"
+            },
+            {
+              "title": "Spinner",
+              "path": "/docs/components/Spinner"
+            },
+            {
+              "title": "Toast",
+              "path": "/docs/components/Toast"
+            },
+            {
+              "title": "StatusBar",
+              "path": "/docs/components/StatusBar"
+            },
+            {
+              "title": "Snackbar",
+              "path": "/docs/components/Snackbar"
+            },
+            {
+              "title": "ScrollView",
+              "path": "/docs/components/ScrollView"
+            },
+            {
+              "title": "List",
+              "path": "/docs/components/List"
+            },
+            {
+              "title": "TextInput",
+              "path": "/docs/components/TextInput"
+            },
+            {
+              "title": "Card",
+              "path": "/docs/components/Card"
+            },
+            {
+              "title": "Bottom navigation",
+              "path": "/docs/components/BottomNavigation"
+            },
+            {
+              "title": "Carousel",
+              "path": "/docs/components/Carousel"
+            },
+            {
+              "title": "Read more text",
+              "path": "/docs/components/ReadMoreText"
+            },
+            {
+              "title": "Rating",
+              "path": "/docs/components/Rating"
+            },
+            {
+              "title": "Switch",
+              "path": "/docs/components/Switch"
             }
           ]
         }

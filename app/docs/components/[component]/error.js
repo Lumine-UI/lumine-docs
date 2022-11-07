@@ -1,6 +1,8 @@
 "use client";
+import ErrorPage from "../../../ErrorPage"; 
+
 export default function Error() {
     return (
-        <div>An error occurred while fetching the document!</div> 
+        <ErrorPage />
     );
 }

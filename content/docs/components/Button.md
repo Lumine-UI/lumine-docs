@@ -2,8 +2,35 @@
 
 A button is a component that the user can interact with to perform a specific action
 
-|  |  |
-| --- | --- |
+![Button Image](/images/Button.png)
+
+### Usage in creating custom components
+
+```jsx
+import { Button } from 'lumine-ui';
+
+const CustomComponent = () => {
+    return (
+        <Button text="PRESS ME" />
+    );
+};
+```
+
+### JSON Template
+
+
+```json
+{
+    id: "some-id",
+    name: "Some name",
+    text: "Some text",
+    style: {
+        color: "red",
+        fontSize: 20,
+        fontWeight: "bold"
+    }
+}
+```
 
 **Props:**
 
