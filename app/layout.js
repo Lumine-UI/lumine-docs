@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import Nav from "./Nav";
 import sidebarHome from "../utils/sidebarHome.json";
 import sidebarDocs from "../utils/sidebarDocs.json";
+import sidebarContribute from "../utils/sidebarContribute.json";
 import { useActiveSection } from "../hooks/useActiveSection";
 import { SidebarContext } from "./SidebarContext";
 import Footer from "./Footer";
@@ -13,6 +14,9 @@ export default function RootLayout({ children }) {
   switch (section) {
     case 'docs':
       routeTree = sidebarDocs;
+      break;
+    case 'contribute':
+      routeTree = sidebarContribute;
       break;
   }
   return (

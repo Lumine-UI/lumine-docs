@@ -4,7 +4,8 @@ export function useActiveSection() {
   const asPath = usePathname();
   if (asPath.startsWith('/docs')) {
     return 'docs';
-  } else {
-    return 'home';
+  } else if(asPath.startsWith('/contribute')) {
+    return 'contribute';
   }
+  return 'home';
 }

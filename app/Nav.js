@@ -12,6 +12,7 @@ import { usePathname } from 'next/navigation';
 import { SidebarContext } from './SidebarContext';
 import sidebarHome from "../utils/sidebarHome.json";
 import sidebarDocs from "../utils/sidebarDocs.json";
+import sidebarContribute from "../utils/sidebarContribute.json";
 import { SidebarRouteTree } from './SidebarRouteTree';
 
 const darkIcon = (
@@ -76,6 +77,9 @@ export default function Nav() {
         break;
       case 'docs':
         routeTree = sidebarDocs;
+        break;
+      case 'contribute':
+        routeTree = sidebarContribute;
         break;
     }
   }
@@ -177,6 +181,9 @@ export default function Nav() {
           <NavLink href="/docs" isActive={section === 'docs'}>
             Docs
           </NavLink>
+          <NavLink href="/contribute" isActive={section === 'contribute'}>
+            Contribute
+          </NavLink>
         </div>
         <div className="flex my-4 h-10 mx-0 w-full lg:hidden justify-end lg:max-w-sm">
           <div className="block dark:hidden">
@@ -215,6 +222,11 @@ export default function Nav() {
             isActive={tab === 'docs'}
             onClick={() => selectTab('docs')}>
             Docs
+          </TabButton>
+          <TabButton
+            isActive={tab === 'contribute'}
+            onClick={() => selectTab('contribute')}>
+            Contribute
           </TabButton>
         </div>
       )}
