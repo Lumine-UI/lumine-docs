@@ -7,7 +7,7 @@
 
 ### What is Lumine?
 
-Lumine, the framework aims at the creation of apps where the developers can choose any set of lumine components to create their own SDUI apps. It relies on the concept of building reactive apps with native UI where the server is responsible for showing and controlling the components on the front end. To sum it up, Lumine assists in building a generic layout engine for server-driven UI that will work across all platforms i.e. Android, Web, and iOS.
+Lumine, the library aims at the creation of apps where the developers can choose any set of lumine components to create their own SDUI apps. It relies on the concept of building reactive apps with native UI where the server is responsible for showing and controlling the components on the front end. To sum it up, Lumine assists in building a generic layout engine for server-driven UI that will work across all platforms i.e. Android, Web, and iOS.
 
 |  |  |
 | --- | --- |
@@ -18,11 +18,11 @@ Lumine, the framework aims at the creation of apps where the developers can choo
 
 Updating the app every time in terms of UI changes & releasing it to the app store is a tedious job due to the time taken. Also, it’s uncertain whether a user wishes to update their app. With the problem in hand, the experience becomes inconsistent for users and laborious for the developers.
 
-But with the help of Lumine, developers can seamlessly deliver updates directly to the client app. The need for constant redeployment and updating of the app is minimized. The framework thus promises to ship new features faster and build new screens with defined components, making it very efficient for rapidly changing business requirements.
+But with the help of Lumine, developers can seamlessly deliver updates directly to the client app. The need for constant redeployment and updating of the app is minimized. The library thus promises to ship new features faster and build new screens with defined components, making it very efficient for rapidly changing business requirements.
 
 ### Benefits of Lumine
 
-- Lumine’s framework allows applications to be developed on multiple platforms, with their layouts dynamically updated from the server, without redeploying web applications or launching new updates on Google Play or the App Store.
+- Lumine’s library allows applications to be developed on multiple platforms, with their layouts dynamically updated from the server, without redeploying web applications or launching new updates on Google Play or the App Store.
 - It provides better performance and scalability without affecting the application size.
 - The UI always stays up-to-date and consistent across all devices, ensuring users a more consistent experience.
 
