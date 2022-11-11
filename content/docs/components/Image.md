@@ -4,7 +4,7 @@ The **Image** component is used to display the image on the screen.
 
 ### ****Usage in creating custom components****
 
-```
+```jsx
 import { Image } from 'lumine-ui';
 
 const CustomComponent = () => {
