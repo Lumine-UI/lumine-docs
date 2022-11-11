@@ -4,7 +4,7 @@ A component that allows you to configure your status bar.
 
 ### ****Usage in creating custom components****
 
-```
+```jsx
 import { StatusBar } from 'lumine-ui'
 
 const CustomComponent = () => {
