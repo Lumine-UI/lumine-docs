@@ -1,4 +1,4 @@
-#Image
+# Image
 
 The **Image** component is used to display the image on the screen.
 
