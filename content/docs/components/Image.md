@@ -1,3 +1,5 @@
+#Image
+
 The **Image** component is used to display the image on the screen.
 
 ### ****Usage in creating custom components****
