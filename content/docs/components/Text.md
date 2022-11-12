@@ -31,4 +31,31 @@ const CustomComponent = () => {
     }
 }
 ```
+
+### Props
+
+- `onLayout`
+    - type: `({ nativeEvent: LayoutEvent
+     }) => void`
+    
+    Invoked on mount and on layout changes.
+    
+- `onLongPress`
+    - type: `({ nativeEvent: PressEvent
+     }) => void`
+    
+    This function is called on long press.
+    
+- `onPress`
+    - type: `({ nativeEvent: PressEvent
+     }) => void`
+    
+    This function is called on press.
+    
+    - `onPressIn`
+    - `onPressOut`
+- `TextLayout`
+    - type: `string`
+    
+    Invoked on text layout
 <br>
