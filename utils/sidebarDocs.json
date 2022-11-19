@@ -46,22 +46,11 @@
               "title": "Icon",
               "path": "/docs/components/Icon"
             },
-            // {
-            //   "title": "Spinner",
-            //   "path": "/docs/components/Spinner"
-            // },
-            // {
-            //   "title": "Toast",
-            //   "path": "/docs/components/Toast"
-            // },
             {
               "title": "StatusBar",
               "path": "/docs/components/StatusBar"
             },
-            // {
-            //   "title": "Snackbar",
-            //   "path": "/docs/components/Snackbar"
-            // },
+
             {
               "title": "ScrollView",
               "path": "/docs/components/ScrollView"
@@ -86,18 +75,6 @@
               "title": "Carousel",
               "path": "/docs/components/Carousel"
             },
-            // {
-            //   "title": "Read more text",
-            //   "path": "/docs/components/ReadMoreText"
-            // },
-            // {
-            //   "title": "Rating",
-            //   "path": "/docs/components/Rating"
-            // },
-            // {
-            //   "title": "Switch",
-            //   "path": "/docs/components/Switch"
-            // }
           ]
         }
       ]
