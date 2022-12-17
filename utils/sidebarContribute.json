@@ -12,11 +12,7 @@
           "path": "/contribute",
           "routes": [
             {
-              "title": "Setup and configure Lumine on your machine",
-              "path": "/contribute/setup"
-            },
-            {
-              "title": "Contribution Guidelines",
+              "title": "Contributing",
               "path": "/contribute/guidelines"
             },
             {

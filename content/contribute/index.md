@@ -1,6 +1,6 @@
-# **Documentation for developers**
+# **Contribute**
 
-## Getting started
+## Prerequisites
 
 ### **Set up Android**
 
