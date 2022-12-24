@@ -35,16 +35,16 @@ npm pack
 
 Run the following commands by replacing `x.y.z` with the current version of the tgz file generated. For example, `lumine-ui-0.1.0.tgz`.
 
+Go to the `example` directory
+
 ```sh
 cd example
-npm install ../lumine-ui-x.y.z.tgz
 ```
 
-### NOTE
-If you want to use lumine for navigation, you need to install `react-native-screens` and `react-native-safe-area-context`. Run the following command in the `example` directory:
+Install the package
 
 ```sh
-npx expo install react-native-screens react-native-safe-area-context
+npm install ../lumine-ui-x.y.z.tgz
 ```
 
 ### Setting up the backend
@@ -63,7 +63,7 @@ npm install
 
 Run the development server
 
-```
+```sh
 npm run dev
 ```  
 
@@ -71,7 +71,12 @@ The server will start on `http://localhost:5000/`
 
 ### Running the example app
 
-Go to `lumine-ui` directory.
+Go to `lumine-ui` directory
+
+```sh
+cd ..
+```
+
 To start the packager:
 
 ```sh
@@ -113,6 +118,12 @@ Remember to add tests for your change if possible. Run the unit tests by:
 
 ```sh
 yarn test
+```
+### NOTE
+If you want to use lumine for navigation, you need to install `react-native-screens` and `react-native-safe-area-context`. Run the following command in the `example` directory:
+
+```sh
+npx expo install react-native-screens react-native-safe-area-context
 ```
 
 ### Commit message convention
